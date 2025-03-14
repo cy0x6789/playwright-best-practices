@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "ES2019",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "baseUrl": "./src",
+        "paths": {
+            "@/*": ["./*"],
+            "@utils/*": ["utils/*"],
+            "@pages/*": ["pages/*"],
+            "@config/*": ["config/*"],
+            "@fixtures/*": ["fixtures/*"],
+            "@tests/*": ["tests/*"]
+        },
+        "types": ["node", "@playwright/test"]
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+}
